@@ -1,0 +1,33 @@
+{
+  "name": "to-do-ethereum",
+  "version": "1.0.0",
+  "description": "To do list created on ethereum blockchain",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && sexit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harryalbert/To-Do-Ethereum.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harryalbert/To-Do-Ethereum/issues"
+  },
+  "homepage": "https://github.com/harryalbert/To-Do-Ethereum#readme",
+  "devDependencies": {
+    "bootstrap": "^4.6.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "lite-server": "^2.3.0",
+    "nodemon": "^2.0.12",
+    "truffle": "^5.1.65",
+    "truffle-contract": "3.0.6"
+  }
+}
