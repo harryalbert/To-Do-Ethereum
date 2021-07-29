@@ -1,0 +1,7 @@
+To deploy project:
+    truffle compile
+    truffle migrate
+
+To look at project in console
+    truffle console
+        t = await TodoList.deployed() (or whatever the smart contract is named)
