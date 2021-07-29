@@ -47,6 +47,8 @@ App = {
 				"Non-Ethereum browser detected. You should consider trying MetaMask!"
 			);
 		}
+
+		web3.eth.defaultAccount = web3.eth.accounts[0];
 	},
 
 	loadAccount: async () => {
@@ -109,8 +111,16 @@ App = {
 			if (taskCompleted) $("#completedTaskList").append($newTaskTemplate);
 			else $("#taskList").append($newTaskTemplate);
 
-            $newTaskTemplate.show();
+			$newTaskTemplate.show();
 		}
+	},
+
+	createTask: async () => {
+		App.setLoading(true);
+
+		const content = $("#newTask").val();
+		await App.todoList.createTask(content);
+		window.location.reload();
 	},
 };
 
