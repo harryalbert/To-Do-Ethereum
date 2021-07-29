@@ -22,4 +22,8 @@ contract TodoList {
         tasks[taskCount] = Task(taskCount, _content, false);
         emit TaskCreated(taskCount, _content, false);
     }
+
+    function toggle(uint256 id, bool completed) public {
+        tasks[id].completed = completed;
+    }
 }
